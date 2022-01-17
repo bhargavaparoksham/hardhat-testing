@@ -21,4 +21,11 @@ describe('Test Contract Unit Test', function() {
       expect((await testContract.getNumber()).toString()).to.equal('77');
     });
 
+
+    it('multiply function returns a value multiplied by 3', async function () {
+      await testContract.setNumber(10);
+      expect((await testContract.multiplyByThree()).toString()).to.equal('30');
+    });
+
+
 });

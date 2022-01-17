@@ -18,4 +18,8 @@ contract TestContract {
           return number;
       }
 
+      function multiplyByThree() public view returns (uint) {
+          return number*3;
+      }
+
 }
